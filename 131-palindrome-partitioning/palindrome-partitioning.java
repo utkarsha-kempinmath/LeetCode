@@ -14,7 +14,7 @@ class Solution {
         for (int j = i; j < s.length(); j++) {
             sub = (s.substring(i, j + 1));
             if (expand(sub)) {
-                current.add(sub.toString());
+                current.add(sub);
                 part(s, ans, current, j + 1);
                 current.remove(current.size() - 1);
             }
